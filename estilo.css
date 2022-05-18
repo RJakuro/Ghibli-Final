@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@font-face {
+    src: url(fuentes/QuestaSlab.ttf);
+    font-family: Questa;
+}
+body{
+    font-family: Questa;
+    background-image: url(imagenes/Fondo\ Ghibli.png);
+    background-size: cover;
+}
+main{
+    width: 90%;
+    margin: auto;
+    /*FLEX PADRE*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    /*FLEX PADRE*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu1 a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0 -2px;
+    display: block;
+    /*FLEX HIJO*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#menu1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+h1{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+#logo img{
+    width: 190px;
+    vertical-align: middle;
+}
+#logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+#principal{
+    background-color: white;
+    opacity: 0.95;
+    padding: 20px;
+    text-align: justify;
+    /*FLEX HIJO*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+}
+#Studio{
+    padding: 20px;
+}
+#principal2{
+    background-color: white;
+    opacity: 0.95;
+    padding: 20px;
+    text-align: justify;
+    /*FLEX PADRE*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*FLEX HIJO*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+}
+#fila1{
+    /*FLEX HIJO*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+    text-align: justify;
+}
+
+#Chihiro1{
+    float: right;
+    border-radius: 20px;
+    margin: 10px 15px 10px 15px;
+}
+#Chihiro2{
+    float: left;
+    border-radius: 20px;
+    margin: 10px 15px 10px 15px;
+}
+
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+    font-display: justify;
+}
+li{
+    font-size: 14px;
+}
+#video1{
+    float: right;
+    margin: 10px 15px 10px 15px;
+}
+#video2{
+        float: left;
+        margin: 10px 15px 10px 15px;
+}
+#imagen1{
+    width: 318px;
+    height: 180px;
+    opacity: 0.7;
+
+}
+#imagen2{
+    width: 640px;
+    height: 360px;
+    opacity: 0.7;
+}
+
+#imagen1:hover{
+    transition-duration: 0.4s;
+    opacity: 1;
+    transform:rotateY(180deg) rotateY(180deg)  
+}
+#imagen2:hover{
+    transition-duration: 0.2s;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#Isao{
+    float: right;
+    border-radius: 50%;
+    margin: 10px 15px 10px 15px;
+}
+#Hayao{
+    float: left;
+    border-radius: 50%;
+    margin: 10px 15px 10px 15px;
+}
+
+#caja{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    /*FLEX PADRE*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}   
+#mapa{
+    padding: 60 auto 60px;
+    border: rgb(48, 48, 48) solid 2px;
+    background-color: yellowgreen
+}
+#Texto{
+    padding: 50px;
+    /*FLEX HIJO*/
+    flex: 1 1;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+#Texto img{
+    border-radius: 20px;
+    margin: 10px auto 10px;
+    display: block;    
+}
+#Texto2{
+    padding: 50px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*FLEX HIJO*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+#Texto2 img{
+    border-radius: 20px;
+    margin: 10px auto 10px;
+    display: block;    
+}
+#registro{
+    width: 400px;
+    margin: auto;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 30px;
+}
+#registro h3{
+    text-align: center;
+    background-color: rgb(109, 109, 107);
+    padding: 5px;
+}
+.ingreso{
+    width: 40%;
+    background-color: rgba(255, 0, 0, 0.486);
+}
+#Tabla1{
+    width: 500px;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+}
+td,th{
+    border: 1px solid grey;
+}
+th{
+    background-color: grey;
+}
+td{
+    background-color: white;
+    text-align: center;
+}
+
+.grid {
+    border: 1px solid #black;
+    padding: 1rem;
+    min-height: 600px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 20% 40% 20% 20%;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: 100px 200px 100px;
+    grid-template-rows: 25% 25% 100px;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+
+    grid-template-areas: 
+        "img1 img2 img2 img7"
+        "img3 img3 img4 img7"
+        "img5 img6 img4 img8";
+
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 10px 10px;
+    gap: 10px;
+
+}
+
+.grid__hijo {
+    border: 1px solid rgb(2, 2, 82);
+    padding: 1rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.grid__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid__hijo--1 {
+    grid-area: img1;
+    background-color: #46d83c;
+}
+
+.grid__hijo--2 {
+    grid-area: img2;
+    background-color: #d5d541;
+}
+
+.grid__hijo--3 {
+    grid-area: img3;
+    background-color: #6ed5c0;
+}
+
+.grid__hijo--4 {
+    grid-area: img4;
+    background-color: #314299;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.grid__hijo--5 {
+    grid-area: img5;
+    background-color: #3f326e;
+}
+
+.grid__hijo--6 {
+    grid-area: img6;
+    background-color: #ae292b;
+}
+
+.grid__hijo--7 {
+    grid-area: img7;
+    background-color: #a8a2b4;
+}
+
+.grid__hijo--8 {
+    grid-area: img8;
+    background-color: #2f8c93;
+}
