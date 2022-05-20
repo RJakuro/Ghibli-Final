@@ -10,7 +10,7 @@
 }
 body{
     font-family: Questa;
-    background-image: url(imagenes/Fondo\ Ghibli.png);
+    background-image: url(imagenes/Fondo\Ghibli.png);
     background-size: cover;
 }
 main{
@@ -336,5 +336,5 @@ td{
 
 .grid__hijo--8 {
     grid-area: img8;
-    background-color: #2f8c93;
+    background-color: blueviolet;
 }
